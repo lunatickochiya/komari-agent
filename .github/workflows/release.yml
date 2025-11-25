@@ -21,7 +21,7 @@ jobs:
           - goos: darwin
             goarch: arm
         goos: [windows, linux, darwin, freebsd]
-        goarch: [amd64, arm64, 386, arm]
+        goarch: [amd64, arm64, 386, arm, mips]
 
     steps:
       - name: Checkout code
