@@ -26,8 +26,14 @@ jobs:
             goarch: mips
           - goos: freebsd
             goarch: mips
+          - goos: darwin
+            goarch: mipsle
+          - goos: windows
+            goarch: mipsle
+          - goos: freebsd
+            goarch: mipsle
         goos: [windows, linux, darwin, freebsd]
-        goarch: [amd64, arm64, 386, arm, mips]
+        goarch: [amd64, arm64, 386, arm, mips, mipsle]
 
     steps:
       - name: Checkout code
