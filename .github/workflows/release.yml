@@ -20,6 +20,12 @@ jobs:
             goarch: 386
           - goos: darwin
             goarch: arm
+          - goos: darwin
+            goarch: mips
+          - goos: windows
+            goarch: mips
+          - goos: freebsd
+            goarch: mips
         goos: [windows, linux, darwin, freebsd]
         goarch: [amd64, arm64, 386, arm, mips]
 
